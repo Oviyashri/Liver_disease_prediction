@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Liver Prediction </title>
+    <link rel="stylesheet" href="../static/styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 style="font-size:40px; color:rgb(151, 35, 151);">Liver Disease Prediction</h1>
+    </div>
+
+    <div class="ml-container">
+        <form action="{{ url_for('predict') }}" method="POST">
+            <h3 style="color:rgb(151, 35, 151);">Age</h3>
+            <input id="first" name="Age" placeholder="in Year" required="required">
+            <br>
+            <h3 style="color:rgb(151, 35, 151);">Gender</h3>
+            <input id="second" name="Gender" placeholder="Male = 1, Female=0" required="required">
+            <br>
+            <h3 style="color:rgb(151, 35, 151);">Total Bilirubin</h3>
+            <input id="third" name="Total_Bilirubin" placeholder="Total Bilirubin" required="required">
+            <br>
+            <h3 style="color:rgb(151, 35, 151);">Alkaline Phosphotase</h3>
+            <input id="fourth" name="Alkaline_Phosphotase" placeholder="Alkaline Phosphotase" required="required">
+            <br>
+            <h3 style="color:rgb(151, 35, 151);">Alamine Aminotransferase</h3>
+            <input id="fifth" name="Alamine_Aminotransferase" placeholder="Alamine Aminotransferase" required="required">
+            <br>
+            <h3 style="color:rgb(151, 35, 151);">Aspartate Aminotransferase</h3>
+            <input id="sixth" name="Aspartate_Aminotransferase" placeholder="Aspartate Aminotransferase" required="required">
+            <br>
+            <h3 style="color:rgb(151, 35, 151);">Total Protiens</h3>
+            <input id="seventh" name="Total_Protiens" placeholder="Total Protiens" required="required">
+            <br>
+            <h3 style="color:rgb(151, 35, 151);">Albumin</h3>
+            <input id="eight" name="Albumin" placeholder="Albumin" required="required">
+            <br>
+            <h3 style="color:rgb(151, 35, 151);">Albumin and Globulin Ratio</h3>
+            <input id="ninth" name="Albumin_and_Globulin_Ratio" placeholder="Albumin and Globulin Ratio" required="required">
+            <br><br>
+            
+            <input type="submit" , style="background-color:rgb(248, 89, 248);padding:5px 12px; font-size: 15px;" value='Predict'> <br><br> 
+            <input type="reset", style="background-color:rgb(248, 89, 248);padding:5px 12px; font-size: 15px;" value='Reset value'> <br><br>
+            <br><br>
+            
+        </form>
+    </div>
+</body>
+
+</html>
+
